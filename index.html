@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Remover</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo"><span>NM</span> Background Remover</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <button class="try-pro">Free</button>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Remove Image Backgrounds Instantly</h1>
+        <p>Upload an image, remove the background, fine-tune with erase and restore tools, then download in high quality. 100% free, no sign-up required.</p>
+        <div class="bg-remover-tool">
+            <div class="upload-section">
+                <h3><span class="icon">⬆</span> Upload Image</h3>
+                <div class="upload-area">
+                    <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                    <img id="uploadedImage" src="" alt="" style="display: none;">
+                    <p id="uploadText">Click to upload an image</p>
+                </div>
+                <div class="upload-buttons">
+                    <button id="removeImageBtn" style="display: none;">🗑️ Remove</button>
+                    <button id="removeBgBtn" style="display: none;">Remove Background</button>
+                </div>
+            </div>
+            <div class="result-section" style="display: none;">
+                <h3><span class="icon">⬇</span> Result</h3>
+                <canvas id="resultCanvas"></canvas>
+                <div class="tools">
+                    <button id="eraseBtn">Erase</button>
+                    <button id="restoreBtn">Restore</button>
+                    <label>Brush Size: <input type="range" id="brushSize" min="5" max="50" value="16"></label>
+                    <button id="resetBtn">Reset</button>
+                    <button id="downloadBtn">Download</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Powerful Features</h2>
+        <p>Our background remover tool is packed with features to help you get the perfect result every time.</p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fa-sharp fa-solid fa-microchip" style="color: #47d7ac;"></i>
+                <h3>Instant Processing</h3>
+                <p>Remove backgrounds in seconds with our advanced AI technology. No waiting, no hassle.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-paint-brush" style="color: #ff9f00;"></i>
+                <h3>Fine-Tune Controls</h3>
+                <p>Perfect your results with our erase and restore editing tools. Adjust brush size for precision.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-lock" style="color: #4a90e2;"></i>
+                <h3>Privacy First</h3>
+                <p>Your images are processed securely and never stored on our servers. Your privacy is our priority.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>Remove backgrounds in just a few simple steps.</p>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Upload</h3>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Process</h3>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Download</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About NM Background Remover</h2>
+        <p>LC Background Remover is an AI-powered tool designed to help users remove backgrounds from images effortlessly. Whether you're editing for personal or professional use, our tool provides a seamless experience with intuitive controls.</p>
+        <ul>
+            <li>⚡ Fast and accurate background removal</li>
+            <li>🖌️ Advanced erase and restore tools</li>
+               
+            <li>📥 High-quality downloads</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Background Remover. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/nadeesh-chathuranga" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Nadeesh-Malaka" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:nadeeshmalaka@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
