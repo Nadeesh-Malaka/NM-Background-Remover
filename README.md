@@ -2,6 +2,9 @@
 
 A simple and efficient web application to remove image backgrounds instantly using the [remove.bg](https://www.remove.bg/) API. This tool allows users to upload an image, remove its background, fine-tune the result with erase and restore tools, enhance the image quality, and download the final image as a PNG with a transparent background.
 
+![image](https://github.com/user-attachments/assets/7bbf3c4a-dd53-49ad-bef5-06052235aa2a)
+
+
 ## Live Demo
 Check out the live site here: [https://nadeesh-malaka.github.io/NM-Background-Remover/](https://nadeesh-malaka.github.io/NM-Background-Remover/)
 
